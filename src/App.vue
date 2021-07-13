@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    
+    <header />
+    <main />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+import axios from "axios"
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    Main,
+    Header
   }
 }
 </script>
