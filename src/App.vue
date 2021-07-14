@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <header />
-    <main />
+    <Header @ricerca="ricercafilm" />
+    <Main />
   </div>
 </template>
 
@@ -15,7 +15,12 @@ export default {
   components: {
     Main,
     Header
-  }
+  },
+  methods: {
+    ricercafilm (text) {
+      console.log(text)
+    }
+  },
 }
 </script>
 
